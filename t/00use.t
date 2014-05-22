@@ -4,5 +4,5 @@ use strict;
 use Test::More tests => 1;
 
 BEGIN {
-    use_ok('Labyrinth::Plugin::Links');
+    use_ok('Labyrinth::Plugin::Guestbook');
 }
