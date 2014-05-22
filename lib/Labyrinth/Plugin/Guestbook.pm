@@ -7,6 +7,17 @@ use vars qw($VERSION);
 
 $VERSION = '1.00';
 
+=head1 NAME
+
+Labyrinth::Plugin::Guestbook - Guestbook plugin handler for Labyrinth
+
+=head1 DESCRIPTION
+
+Contains all the Guestbook handling functionality for the Labyrinth Web
+Framework.
+
+=cut
+
 #----------------------------------------------------------------------------
 # Libraries
 
@@ -230,6 +241,61 @@ sub Update {
 
 __END__
 
+=head1 PUBLIC INTERFACE METHODS
+
+=over 4
+
+=item * Read
+
+Lists all the publicly visable posts.
+
+=item * Save
+
+Save a message to be moderated.
+
+=back
+
+=head1 ADMIN INTERFACE METHODS
+
+=head2 MP3s Methods
+
+=over 4
+
+=item * List
+
+List and manage/moderate messages posted to the guestbook.
+
+=item * MultiBlock
+
+Block the IPs and delete messages based on content.
+
+=item * Block
+
+Block the IP of a single and delete it.
+
+=item * Allow
+
+Allow the IP of a message, and approve all messages with this IP.
+
+=item * Approve
+
+Approve a single message, ignoring the IP.
+
+=item * Delete
+
+Delete a single message, ignoring the IP.
+
+=item * Edit
+
+Edit a post.
+
+=item * Update
+
+Validates the fields returned from the edit page, and saves the record back to
+the database.
+
+=back
+
 =head1 SEE ALSO
 
   Labyrinth
@@ -244,7 +310,7 @@ Miss Barbell Productions, L<http://www.missbarbell.co.uk/>
   Copyright (C) 2002-2014 Barbie for Miss Barbell Productions
   All Rights Reserved.
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.
 
 =cut
