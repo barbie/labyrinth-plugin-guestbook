@@ -1,5 +1,7 @@
 Changes for Labyrinth-Plugin-Guestbook
 ======================================
 
+        - missed Data::Pageset from pre-requisites.
+
 1.00	2014-05-22
         - first official release
