@@ -37,7 +37,8 @@
             "requires" : {
               "perl": "5.006",
               "Data::Pageset": "0",
-              "Labyrinth": "5.20"
+              "Labyrinth": "5.20",
+              "Labyrinth::Plugin::Core": "5.15"
             }
         }
     },
