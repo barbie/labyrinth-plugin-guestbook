@@ -101,7 +101,6 @@ sub Save {
         || !$cgiparams{loopback}
         || $cgiparams{loopback} ne $settings{ipaddr}) {
         $tvars{thanks} = 3;
-#        print STDERR "COMMENT SPAM ALERT:\n" . Dumper(\%cgiparams);
         return;
     }
     $cgiparams{publish} = $check == ALLOW ? 3 : 2;
@@ -208,10 +207,12 @@ sub Delete {
 }
 
 sub Edit {
+    return  unless AccessUser(EDITOR);
     return  unless AuthorCheck('GetGuestbookByID','entryid',EDITOR);
 }
 
 sub Update {
+    return  unless AccessUser(EDITOR);
     return  unless AuthorCheck('GetGuestbookByID','entryid',EDITOR);
 
     # Strip out HTML unless we are allowing it.  The process_html
