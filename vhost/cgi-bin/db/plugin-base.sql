@@ -12,4 +12,4 @@ CREATE TABLE `guestbook` (
   `comments` blob,
   PRIMARY KEY  (`entryid`),
   KEY `IXPUB` (`publish`)
-) ENGINE=MyISAM AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
