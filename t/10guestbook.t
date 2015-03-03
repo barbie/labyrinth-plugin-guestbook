@@ -388,7 +388,7 @@ SKIP: {
         diag($loader->error)    unless($res);
 
         $vars = $loader->vars;
-        diag("$call vars=".Dumper($vars->{data}));
+        #diag("$call vars=".Dumper($vars->{data}));
         is($vars->{data},undef,"no permission: $call");
     }
     
