@@ -1,6 +1,8 @@
 Changes for Labyrinth-Plugin-Guestbook
 ======================================
 
+        - oops, forgot test files.
+
 1.04    2015-03-03
         - Edit and Update require Editor permission.
         - extended functional test suite.
